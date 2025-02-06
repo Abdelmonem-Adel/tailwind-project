@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+  <body>
+
+
+    <nav>
+      <div>
+        <div class="antialiased bg-gray-100 dark:bg-gray-900">
+          <div
+            class="w-full text-gray-700 bg-white dark:text-gray-200 dark:bg-gray-800"
+          >
+            <div
+              x-data="{ open: true }"
+              class="flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8"
+            >
+              <div class="flex flex-row items-center justify-between p-4">
+                <a
+                  href="#"
+                  class="text-3xl font-bold tracking-widest text-gray-900 uppercase rounded-lg dark:text-white focus:outline-none focus:shadow-outline"
+                  >APPEXY</a
+                >
+              </div>
+              <nav
+                class="flex-col flex-grow pb-4 md:pb-0 md:flex md:justify-center md:flex-row"
+              >
+                <a
+                  class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="#"
+                  >Home</a
+                >
+                <a
+                  class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="#"
+                  >About</a
+                >
+                <a
+                  class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
+                  href="#"
+                  >Contact</a
+                >
+              </nav>
+
+              <label class="relative inline-flex cursor-pointer items-center">
+                <input id="toggle" type="checkbox" class="peer sr-only" />
+                <label for="switch" class="hidden"></label>
+                <div class="peer h-6 w-11 rounded-full border bg-slate-200 after:absolute after:left-[2px] after:top-0.5 after:h-5 after:w-5 after:rounded-full after:border after:border-gray-300 after:bg-white after:transition-all after:content-[''] peer-checked:bg-slate-800 peer-checked:after:translate-x-full peer-checked:after:border-white peer-focus:ring-green-300"></div>
+              </label>
+
+              <!-- <button
+                class="middle none center mr-4 rounded-lg bg-slate-800 py-3 px-6 font-sans text-xs font-bold uppercase text-white shadow-md shadow-black transition-all hover:shadow-lg hover:shadow-black-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                data-ripple-light="true"
+              >
+                dark mode
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+  
+
+
+    <section class="carousel ">
+
+<div id="controls-carousel" class="relative w-full" data-carousel="static">
+  <!-- Carousel wrapper -->
+  <div class=" relative h-56 overflow-hidden rounded-lg md:h-96">
+       <!-- Item 1 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./image/ales-nesetril-Im7lZjxeLhg-unsplash-EFNYJM67.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 2 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+          <img src="./image/bg2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 3 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./image/christopher-gower-m_HRfLhgABo-unsplash.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 4 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./image/testtwo.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+      <!-- Item 5 -->
+      <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <img src="./image/fabian-irsara-67l-QujB14w-unsplash.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+      </div>
+  </div>
+  <!-- Slider controls -->
+  <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+          </svg>
+          <span class="sr-only">Previous</span>
+      </span>
+  </button>
+  <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+      <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+          <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+          </svg>
+          <span class="sr-only">Next</span>
+      </span>
+  </button>
+</div>
+
+    
+    </section>
+
+
+
+
+    <section class="card  dark:bg-gray-800 pb-32">
+
+      <h2 class="text-black text-[48px] text-center pt-10 dark:text-white">Tools</h2>
+      <p class="text-center mb-6 dark:text-white">Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+
+      <div class="card text-center">
+        
+        
+        
+<div class="inline-block w-md mb-4 p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800  dark:hover:bg-gray-700 dark:border-black">
+
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">product</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+
+<div class="inline-block w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800  dark:border-black dark:hover:bg-gray-700">
+
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">product</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+
+
+<div class="inline-block w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800  dark:border-black dark:hover:bg-gray-700">
+
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">product</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+
+
+<div class="inline-block w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800  dark:border-black dark:hover:bg-gray-700">
+
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">product</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+
+
+<div class="inline-block w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800  dark:border-black dark:hover:bg-gray-700">
+
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">product</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+
+
+<div class="inline-block w-md p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800  dark:border-black dark:hover:bg-gray-700">
+
+  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">product</h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur.</p>
+</div>
+  
+      </div>
+      
+    </section>
+
+
+
+
+    
+      <footer class="bg-slate-800  shadow-sm dark:bg-gray-900 py-6">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+          <div class="sm:flex sm:items-center sm:justify-between">
+            <a
+              href="#"
+              class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse"
+            >
+              <img src="./image/asset 18.png" class="h-8" alt="Flowbite Logo" />
+            </a>
+            <ul
+              class="flex flex-wrap items-center mb-6 text-lg font-md text-white sm:mb-0 dark:text-gray-400"
+            >
+              <li>
+                <a href="#"> <i class="fa-brands fa-facebook mr-4"></i> </a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa-brands fa-twitter mr-4"></i> </a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa-brands fa-linkedin mr-4"></i> </a>
+              </li>
+              <li>
+                <a href="#"> <i class="fa-brands fa-youtube"></i> </a>
+              </li>
+            </ul>
+          </div>
+          <!-- <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> -->
+        </div>
+      </footer>
+    
+
+    <script
+      src="https://kit.fontawesome.com/62e77f44a2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.js"></script>
+
+    <script src="./index.js"></script>
+
+  </body>
+</html>
